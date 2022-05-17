@@ -1,0 +1,840 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>módulos de procesamiento on darktable 3.9 user manual</title>
+    <link>https://darktable-org.github.io/dtdocs/es/module-reference/processing-modules/</link>
+    <description>Recent content in módulos de procesamiento on darktable 3.9 user manual</description>
+    <generator>Hugo -- gohugo.io</generator><atom:link href="https://darktable-org.github.io/dtdocs/es/module-reference/processing-modules/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Aberraciones (obsoleto)</title>
+      <link>https://darktable-org.github.io/dtdocs/es/module-reference/processing-modules/defringe/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://darktable-org.github.io/dtdocs/es/module-reference/processing-modules/defringe/</guid>
+      <description>Tenga en cuenta que este módulo está obsoleto desde darktable 3.6 y ya no debería usarse para nuevas ediciones. En su lugar, utilice el módulo [aberraciones cromáticas](./ chromatic-aberrations.md).
+ Elimine las franjas de color, que a menudo resultan de las aberraciones cromáticas longitudinales (LCA), también conocidas como aberraciones cromáticas axiales.
+Este módulo utiliza detección de bordes. Cuando los píxeles se detectan como una franja, el color se reconstruye a partir de píxeles vecinos menos saturados.</description>
+    </item>
+    
+    <item>
+      <title>aberraciones cromáticas RAW</title>
+      <link>https://darktable-org.github.io/dtdocs/es/module-reference/processing-modules/raw-chromatic-aberrations/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://darktable-org.github.io/dtdocs/es/module-reference/processing-modules/raw-chromatic-aberrations/</guid>
+      <description>Corrija las aberraciones cromáticas de las imágenes RAW.
+Como este módulo opera con datos sin procesar no interpolados, el modelo subyacente asume una imagen fotográfica sin recortar como entrada. Por lo tanto, es probable que falle al acercar la imagen, ya que solo puede operar en la parte visible de la imagen. Por lo tanto, el módulo se omitirá en niveles de zoom altos y aparecerá un mensaje de &amp;ldquo;omitido&amp;rdquo; en la parte superior del módulo.</description>
+    </item>
+    
+    <item>
+      <title>aberración cromática</title>
+      <link>https://darktable-org.github.io/dtdocs/es/module-reference/processing-modules/chromatic-aberrations/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://darktable-org.github.io/dtdocs/es/module-reference/processing-modules/chromatic-aberrations/</guid>
+      <description>Corrige la aberración cromática.
+A diferencia del módulo de aberración cromática raw, este módulo no necesita información en raw como entrada.
+🔗flujo de trabajo Para obtener mejores resultados, se sugiere que siga los siguientes pasos:
+ Atenúe la aberración cromática lo más posible en el módulo de corrección de lente usando los deslizadores de ACT. Incremente el deslizador de intensidad en este módulo para ver mejor su efecto. Incremente el radio hasta que las aberraciones cromáticas desaparezcan.</description>
+    </item>
+    
+    <item>
+      <title>ajustes básicos (obsoleto)</title>
+      <link>https://darktable-org.github.io/dtdocs/es/module-reference/processing-modules/basic-adjustments/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://darktable-org.github.io/dtdocs/es/module-reference/processing-modules/basic-adjustments/</guid>
+      <description>Tenga en cuenta que este módulo está obsoleto desde darktable 3.6 y ya no debería usarse para nuevas ediciones. En su lugar, utilice el panel de acceso rápido.
+ Un módulo de conveniencia que combina controles de _exposición _, reconstrucción de luces, balance de color e intensidad en un solo módulo.
+Si bien este módulo puede proporcionar una forma rápida y conveniente de realizar ajustes simples en una imagen, debe usarse con cuidado.</description>
+    </item>
+    
+    <item>
+      <title>balance de blancos</title>
+      <link>https://darktable-org.github.io/dtdocs/es/module-reference/processing-modules/white-balance/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://darktable-org.github.io/dtdocs/es/module-reference/processing-modules/white-balance/</guid>
+      <description>Ajuste el balance de blancos de la imagen modificando la temperatura y el tinte, definiendo un coeficiente para cada canal RGB o eligiendo de la lista de ajustes de balance de blancos predefinidos.
+La configuración predeterminada de este módulo se deriva del balance de blancos de la cámara almacenado en los datos Exif de la imagen.
+White balance is not intended as a &amp;ldquo;creative&amp;rdquo; module &amp;ndash; its primary goal is to technically correct the white balance of the image ensuring that neutral colored objects in the scene are rendered with neutral colors in the image.</description>
+    </item>
+    
+    <item>
+      <title>balance de color</title>
+      <link>https://darktable-org.github.io/dtdocs/es/module-reference/processing-modules/color-balance/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://darktable-org.github.io/dtdocs/es/module-reference/processing-modules/color-balance/</guid>
+      <description>Una herramienta versátil para ajustar el balance de color de la imagen.
+Este módulo se puede utilizar para revertir las tonalidades de color parásitas o para mejorar la atmósfera visual de una imagen utilizando la gradación de color, una técnica popular en la industria del cine. Para el flujo de trabajo referido a escenas, debería considerar usar el módulo mejorado _balance de color rgb _ en su lugar.
+🔗Resumen El módulo balance de color le permite cambiar los colores de forma selectiva por rango de luminancia (sombras, medios tonos y luces).</description>
+    </item>
+    
+    <item>
+      <title>balance de color rgb</title>
+      <link>https://darktable-org.github.io/dtdocs/es/module-reference/processing-modules/color-balance-rgb/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://darktable-org.github.io/dtdocs/es/module-reference/processing-modules/color-balance-rgb/</guid>
+      <description>Un módulo avanzado que trae herramientas de gradación de color de la cinematografía a la canalización referida a la escena fotográfica.
+Este módulo no es adecuado para principiantes sin conocimientos previos de la teoría del color, que deberían ceñirse a los ajustes de croma global y _ vibración global_ hasta que tengan una buena comprensión de las dimensiones del color.
+🔗introducción La gradación de color es una parte importante de la edición de imágenes.</description>
+    </item>
+    
+    <item>
+      <title>calibración de color</title>
+      <link>https://darktable-org.github.io/dtdocs/es/module-reference/processing-modules/color-calibration/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://darktable-org.github.io/dtdocs/es/module-reference/processing-modules/color-calibration/</guid>
+      <description>Una corrección de espacio de color con todas las funciones, módulo de ajuste de equilibrio de blancos y mezclador de canales.
+Este módulo simple pero poderoso se puede usar de las siguientes maneras:
+  Para ajustar el equilibrio de blancos ([adaptación cromática] (# equilibrio de blancos en la pestaña de gato de transformación de adaptación cromática)), trabajando en conjunto con el [_ equilibrio de blancos _] (./ white-balance.md) módulo. Aquí, el módulo _white balance_ realiza unos ajustes iniciales (necesarios para que el módulo [_demosaic _] (.</description>
+    </item>
+    
+    <item>
+      <title>colorear</title>
+      <link>https://darktable-org.github.io/dtdocs/es/module-reference/processing-modules/colorize/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://darktable-org.github.io/dtdocs/es/module-reference/processing-modules/colorize/</guid>
+      <description>Agrega una capa sólida de color a la imagen.
+🔗controles del módulo  matiz El tono de la capa de color. saturación La saturación de los tonos de las sombras. ligereza La ligereza de la capa de color. mezcla de fuentes Controla cómo se mezcla la claridad de la imagen de entrada con la capa de color. Establecer esto en cero dará como resultado un plano de color uniforme.  </description>
+    </item>
+    
+    <item>
+      <title>contraste de color</title>
+      <link>https://darktable-org.github.io/dtdocs/es/module-reference/processing-modules/color-contrast/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://darktable-org.github.io/dtdocs/es/module-reference/processing-modules/color-contrast/</guid>
+      <description>Un control simplificado para cambiar el contraste o la separación de colores entre los ejes verde/magenta y azul/amarillo en el espacio de color Lab. Los valores más altos aumentan el contraste de color, los valores más bajos lo disminuyen.
+🔗controles del módulo  contraste verde-magenta Cambia el contraste de color verde-magenta. Esto es equivalente a subir o bajar la inclinación de la curva a* en Lab. Los valores más bajos desaturan los verdes y el magenta, mientras que los valores más altos aumentan su saturación.</description>
+    </item>
+    
+    <item>
+      <title>contraste local</title>
+      <link>https://darktable-org.github.io/dtdocs/es/module-reference/processing-modules/local-contrast/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://darktable-org.github.io/dtdocs/es/module-reference/processing-modules/local-contrast/</guid>
+      <description>Mejora el contraste local de la imagen.
+Esto se logra utilizando un filtro laplaciano local (predeterminado) o un filtro bilateral no normalizado. Ambos modos funcionan exclusivamente en el canal L de Lab. El filtro laplaciano local ha sido diseñado para ser robusto contra efectos de halo no deseados e inversiones de gradiente a lo largo de los bordes.
+🔗controles del módulo  modo Elección de filtro laplaciano local o _ cuadrícula bilateral_.</description>
+    </item>
+    
+    <item>
+      <title>contraste, brillo y saturación</title>
+      <link>https://darktable-org.github.io/dtdocs/es/module-reference/processing-modules/contrast-brightness-saturation/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://darktable-org.github.io/dtdocs/es/module-reference/processing-modules/contrast-brightness-saturation/</guid>
+      <description>Una herramienta muy básica para ajustar el contraste, brillo y saturación de una imagen. Tenga en cuenta que otros módulos proporcionan métodos mucho más versátiles para ajustar estos parámetros.
+Todos los controles del módulo están predeterminados en una posición neutra (cero) y brindan la capacidad de aumentar o disminuir el parámetro relevante
+ Nota: Este módulo funciona en el espacio de color Lab y es propenso a los halos. En su lugar, utilice el módulo balance de color rgb.</description>
+    </item>
+    
+    <item>
+      <title>corrección de color</title>
+      <link>https://darktable-org.github.io/dtdocs/es/module-reference/processing-modules/color-correction/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://darktable-org.github.io/dtdocs/es/module-reference/processing-modules/color-correction/</guid>
+      <description>Modifique la saturación global de la imagen para darle un matiz a la imagen o como método alternativo para dividir el tono de la imagen.
+ Nota: Use el módulo balance de color rgb para modificaciones de color.
+ 🔗controles del módulo  tablero de color Para el tono dividido, mueva el punto blanco hasta el tono de resaltado deseado y luego seleccione un tono para las sombras con el punto oscuro.</description>
+    </item>
+    
+    <item>
+      <title>Corrección de lente</title>
+      <link>https://darktable-org.github.io/dtdocs/es/module-reference/processing-modules/lens-correction/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://darktable-org.github.io/dtdocs/es/module-reference/processing-modules/lens-correction/</guid>
+      <description>Corrige automáticamente (y simula) la distorsión de la lente, las aberraciones cromáticas transversales (TCA) y el viñeteado.
+Este módulo identifica la combinación de cámara/lente a partir de los datos Exif de la imagen y utiliza la biblioteca lensfun externa para proporcionar parámetros de corrección.
+Si la biblioteca de lensfun de su sistema no tiene un perfil de corrección para la combinación de cámara/lente identificada automáticamente, los controles para los tres parámetros fotométricos (a continuación) se reemplazan con un mensaje de advertencia.</description>
+    </item>
+    
+    <item>
+      <title>corregir perfil de entrada</title>
+      <link>https://darktable-org.github.io/dtdocs/es/module-reference/processing-modules/unbreak-input-profile/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://darktable-org.github.io/dtdocs/es/module-reference/processing-modules/unbreak-input-profile/</guid>
+      <description>Agregue una curva de corrección a los datos de la imagen. Esto es necesario si ha seleccionado determinados perfiles de entrada en el módulo perfil de color de entrada.
+Si decide utilizar un perfil ICC del fabricante de la cámara en el módulo perfil de color de entrada, con frecuencia es necesario aplicar previamente una curva de corrección a los datos de la imagen para evitar la salida final de verse demasiado oscuro.</description>
+    </item>
+    
+    <item>
+      <title>curva base</title>
+      <link>https://darktable-org.github.io/dtdocs/es/module-reference/processing-modules/base-curve/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://darktable-org.github.io/dtdocs/es/module-reference/processing-modules/base-curve/</guid>
+      <description>Simule el JPEG de la cámara aplicando una curva base característica a la imagen.
+darktable viene con una serie de ajustes preestablecidos de curva base que intentan imitar las curvas de varios fabricantes de cámaras. Estos ajustes preestablecidos se aplican automáticamente de acuerdo con la identificación del fabricante que se encuentra en los datos Exif de la imagen. Los ajustes preestablecidos de curva base específicos de la cámara también están disponibles para algunos modelos de cámara.</description>
+    </item>
+    
+    <item>
+      <title>curva de tono</title>
+      <link>https://darktable-org.github.io/dtdocs/es/module-reference/processing-modules/tone-curve/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://darktable-org.github.io/dtdocs/es/module-reference/processing-modules/tone-curve/</guid>
+      <description>Una herramienta clásica de fotografía digital para alterar los tonos de una imagen usando curvas.
+Este módulo es muy similar al módulo _rgb curve _ pero funciona en el espacio de color Lab.
+Active el selector de color para mostrar los valores seleccionados en el histograma mostrado (Ctrl+clic o click derecho para usar el selector en el modo de área). Los valores numéricos (Lab) de la entrada y salida (ver a continuación) en el lugar o área seleccionados se muestran en la parte superior izquierda del gráfico.</description>
+    </item>
+    
+    <item>
+      <title>curva RGB</title>
+      <link>https://darktable-org.github.io/dtdocs/es/module-reference/processing-modules/rgb-curve/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://darktable-org.github.io/dtdocs/es/module-reference/processing-modules/rgb-curve/</guid>
+      <description>Una herramienta clásica de fotografía digital para alterar los tonos de una imagen mediante curvas.
+Este módulo es muy similar al módulo [curva de tono](./ tone-curve.md) pero funciona en el espacio de color RGB.
+Active el selector de color de la izquierda para mostrar los valores seleccionados en el gráfico (Ctrl + clic o click derecho para usar el selector en el modo de área). Los valores numéricos (Lab) de la entrada y salida (ver más abajo) en el área o área seleccionada se muestran en la parte superior izquierda del gráfico.</description>
+    </item>
+    
+    <item>
+      <title>densidad graduada</title>
+      <link>https://darktable-org.github.io/dtdocs/es/module-reference/processing-modules/graduated-density/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://darktable-org.github.io/dtdocs/es/module-reference/processing-modules/graduated-density/</guid>
+      <description>Simule un filtro de densidad graduado para corregir la exposición y el color de forma progresiva.
+Se muestra una línea en la pantalla que permite modificar la posición y rotación del degradado con el ratón.
+Se sabe que este módulo provoca artefactos de bandas en determinadas condiciones. Debería considerar activar el módulo [_suavizado _](./ dithering.md) para aliviar estos problemas.
+🔗controles del módulo  densidad Establece la densidad del filtro (EV). Un valor bajo subexpone ligeramente mientras que un valor alto crea un filtro fuerte.</description>
+    </item>
+    
+    <item>
+      <title>desenfoques</title>
+      <link>https://darktable-org.github.io/dtdocs/es/module-reference/processing-modules/blurs/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://darktable-org.github.io/dtdocs/es/module-reference/processing-modules/blurs/</guid>
+      <description>Simular desenfoques físicamente precisos en un espacio RGB referido a escena
+🔗tipos de desenfoques Se proveen tres tipos de desenfoque:
+  desenfoque de lente: simula un diafragma de lente con un número configurable de palas y curvatura de palas para crear un efecto bokeh sintético.
+  desenfoque de movimiento: simula el efecto del movimiento de la cámara con una ruta configurable.
+  desenfoque gaussiano: esto no es realmente un desenfoque óptico, pero se puede usar para eliminar el ruido o para efectos creativos usando modos de fusión</description>
+    </item>
+    
+    <item>
+      <title>difuminar textura</title>
+      <link>https://darktable-org.github.io/dtdocs/es/module-reference/processing-modules/surface-blur/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://darktable-org.github.io/dtdocs/es/module-reference/processing-modules/surface-blur/</guid>
+      <description>Suaviza las superficies de la imagen conservando los bordes nítidos mediante un filtro bilateral.
+Este módulo puede utilizarse para eliminar el ruido de imágenes, sin embargo, debe tener en cuenta que los filtros bilaterales son susceptibles a sobrepasos y darktable ofrece alternativas mucho mejores. Por ejemplo, el módulo reducción de ruido en astrofotografía utiliza un algoritmo de eliminación de ruido no local, y el módulo reducción de ruido (perfilado) permite elegir entre medios no locales y algoritmos de eliminación de ruido de ondas.</description>
+    </item>
+    
+    <item>
+      <title>difuso / nítido</title>
+      <link>https://darktable-org.github.io/dtdocs/es/module-reference/processing-modules/diffuse/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://darktable-org.github.io/dtdocs/es/module-reference/processing-modules/diffuse/</guid>
+      <description>La difusión es una familia de procesos físicos por los cuales las partículas se mueven y se esparcen gradualmente con el tiempo, desde una fuente que las genera. En el procesamiento de imágenes, la difusión ocurre principalmente en dos lugares:
+  difusión de fotones a través del cristal de la lente (desenfoque) o aire húmedo (nebulización),
+  difusión de pigmentos en tintas húmedas o acuarelas.
+  En ambos casos, la difusión hace que la imagen sea menos nítida al &amp;ldquo;filtrar&amp;rdquo; partículas y suavizar las variaciones locales.</description>
+    </item>
+    
+    <item>
+      <title>ecualizador de contraste</title>
+      <link>https://darktable-org.github.io/dtdocs/es/module-reference/processing-modules/contrast-equalizer/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://darktable-org.github.io/dtdocs/es/module-reference/processing-modules/contrast-equalizer/</guid>
+      <description>Ajuste la luminancia y el contraste cromático en el dominio de ondículas.
+Este módulo versátil se puede utilizar para lograr una variedad de efectos, que incluyen aumento de brillo, eliminación de ruido, claridad y contraste local.
+Funciona en el dominio ondículas y sus parámetros se pueden ajustar de forma independiente para cada escala de detalle de nivel de ondículas. El módulo opera en el espacio de color CIE LCh y, por lo tanto, es capaz de tratar la luminosidad y la cromaticidad de forma independiente.</description>
+    </item>
+    
+    <item>
+      <title>ecualizador de tono</title>
+      <link>https://darktable-org.github.io/dtdocs/es/module-reference/processing-modules/tone-equalizer/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://darktable-org.github.io/dtdocs/es/module-reference/processing-modules/tone-equalizer/</guid>
+      <description>Oscurece y quema conservando el contraste local.
+Cuando se usa junto con película rgb, este módulo reemplaza la necesidad de otros módulos de mapeo de tonos como curva base, sombras y luces, curva de tono y sistema de zonas (obsoleto). Funciona en un espacio RGB lineal y utiliza una máscara definida por el usuario para guiar los ajustes de esquivar y grabar, lo que ayuda a preservar el contraste local dentro de la imagen.</description>
+    </item>
+    
+    <item>
+      <title>eliminación de neblina</title>
+      <link>https://darktable-org.github.io/dtdocs/es/module-reference/processing-modules/haze-removal/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://darktable-org.github.io/dtdocs/es/module-reference/processing-modules/haze-removal/</guid>
+      <description>Reduce automáticamente el efecto del polvo y la bruma en la atmósfera. Este módulo también puede emplearse de manera más general para dar a las imágenes un refuerzo de color específicamente en las regiones de la imagen de bajo contraste.
+La neblina absorbe la luz de los objetos en la escena, pero también es una fuente de luz de fondo difusa. El módulo de eliminación de neblina primero estima, para cada región de la imagen, la cantidad de neblina en la escena.</description>
+    </item>
+    
+    <item>
+      <title>enfoque</title>
+      <link>https://darktable-org.github.io/dtdocs/es/module-reference/processing-modules/sharpen/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://darktable-org.github.io/dtdocs/es/module-reference/processing-modules/sharpen/</guid>
+      <description>Mejore los detalles de la imagen con una máscara de enfoque estándar (USM).
+Este módulo funciona aumentando el contraste alrededor de los bordes y, por lo tanto, mejorando la senación de nitidez de una imagen. Este módulo se aplica al canal L en el espacio de color Lab.
+ Nota: El algoritmo USM utilizado en este módulo realiza desenfoques en el espacio de color Lab, lo que puede producir efectos no deseados y ya no se recomienda.</description>
+    </item>
+    
+    <item>
+      <title>enmarcar</title>
+      <link>https://darktable-org.github.io/dtdocs/es/module-reference/processing-modules/framing/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://darktable-org.github.io/dtdocs/es/module-reference/processing-modules/framing/</guid>
+      <description>Genera un marco alrededor de la imagen.
+El marco consta de un borde (con un color definido por el usuario) y una línea de marco dentro de ese borde (con un segundo color definido por el usuario). Hay varias opciones disponibles para controlar la geometría y el color del marco.
+🔗controles del módulo  tamaño del borde El tamaño del fotograma como porcentaje de la imagen completa subyacente. relación de aspecto La relación de aspecto del módulo final de salida (esto es, la imagen subyacente más el marco) orientación La orientación del encuadre (retrato / paisaje).</description>
+    </item>
+    
+    <item>
+      <title>escalar píxeles</title>
+      <link>https://darktable-org.github.io/dtdocs/es/module-reference/processing-modules/scale-pixels/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://darktable-org.github.io/dtdocs/es/module-reference/processing-modules/scale-pixels/</guid>
+      <description>Algunas cámaras (como la Nikon D1X) tienen celdas sensoras rectangulares en lugar de las cuadradas habituales. Sin corrección, esto daría lugar a imágenes distorsionadas. Este módulo aplica la escala requerida.
+darktable detecta imágenes que necesitan corrección utilizando sus datos Exif y activa automáticamente este módulo cuando sea necesario. Para otras imágenes, el módulo siempre permanece desactivado.
+El módulo no tiene controles.</description>
+    </item>
+    
+    <item>
+      <title>exposición</title>
+      <link>https://darktable-org.github.io/dtdocs/es/module-reference/processing-modules/exposure/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://darktable-org.github.io/dtdocs/es/module-reference/processing-modules/exposure/</guid>
+      <description>Aumente o disminuya el brillo general de una imagen.
+Este módulo tiene dos modos de funcionamiento:
+ manual Configure la exposición, el nivel de negro y el umbral de recorte manualmente automático (solo imágenes RAW) Utilice un análisis del histograma de la imagen para establecer automáticamente la exposición. darktable selecciona automáticamente la compensación de exposición que se requiere para cambiar el percentil seleccionado al nivel objetivo seleccionado (consulte las definiciones a continuación).</description>
+    </item>
+    
+    <item>
+      <title>filtro de paso alto</title>
+      <link>https://darktable-org.github.io/dtdocs/es/module-reference/processing-modules/highpass/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://darktable-org.github.io/dtdocs/es/module-reference/processing-modules/highpass/</guid>
+      <description>Un filtro de paso alto.
+Este módulo está diseñado principalmente para ser utilizado en combinación con un _blend mode _. Por ejemplo, intente utilizar el módulo con un modo de mezcla de &amp;ldquo;luz suave&amp;rdquo; para el aumento de enfoque de paso alto.
+ Nota: Este módulo realiza desenfoques en el espacio de color Lab, lo que puede provocar efectos no deseados y ya no se recomienda. En su lugar, utilice el módulo ecualizador de contraste para una nitidez fina o el módulo contraste local para una nitidez general.</description>
+    </item>
+    
+    <item>
+      <title>filtro paso bajo</title>
+      <link>https://darktable-org.github.io/dtdocs/es/module-reference/processing-modules/lowpass/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://darktable-org.github.io/dtdocs/es/module-reference/processing-modules/lowpass/</guid>
+      <description>Aplique un filtro de paso bajo (por ejemplo, un desenfoque gaussiano) a la imagen, mientras controla el contraste y la saturación de salida.
+Este módulo está destinado principalmente a ser utilizado en combinación con un modo de mezcla. Por ejemplo, intente usar el ajuste preestablecido de mascara de contraste local con el modo de mezcla superposición.
+ Nota: Este módulo realiza desenfoques en el espacio de color Lab, lo que puede producir efectos no deseados y ya no se recomienda.</description>
+    </item>
+    
+    <item>
+      <title>grano</title>
+      <link>https://darktable-org.github.io/dtdocs/es/module-reference/processing-modules/grain/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://darktable-org.github.io/dtdocs/es/module-reference/processing-modules/grain/</guid>
+      <description>Simula el grano de una película analógica. El grano se procesa en el canal L del espacio de color Lab.
+🔗controles del módulo  tosquedad El tamaño de grano, escalado para simular un número ISO. fuerza La fuerza del efecto.  </description>
+    </item>
+    
+    <item>
+      <title>intensidad (obsoleto)</title>
+      <link>https://darktable-org.github.io/dtdocs/es/module-reference/processing-modules/vibrance/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://darktable-org.github.io/dtdocs/es/module-reference/processing-modules/vibrance/</guid>
+      <description> Tenga en cuenta que este módulo obsoleto desde darktable 3.6 y ya no debería usarse para nuevas ediciones. En su lugar, utilice el control de intensidad (vibrance) en el módulo _balance de color rgb _.
+ Sature y reduzca la luminosidad de los píxeles más saturados para hacer que los colores sean más vívidos.
+🔗controles del módulo  vibración La cantidad de intensidad que se aplicará a la imagen.  </description>
+    </item>
+    
+    <item>
+      <title>interpolación cromática</title>
+      <link>https://darktable-org.github.io/dtdocs/es/module-reference/processing-modules/demosaic/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://darktable-org.github.io/dtdocs/es/module-reference/processing-modules/demosaic/</guid>
+      <description>Controla cómo son interpolados cromáticamente los ficheros RAW
+🔗filtros bayer Las células del sensor de una cámara digital no son sensibles al color, solo pueden registrar diferentes niveles de luminosidad. Para obtener una imagen en color, cada celda está cubierta por un filtro de color (rojo, verde o azul) que pasa principalmente luz de ese color. Esto significa que cada píxel de la imagen sin procesar solo contiene información sobre un único canal de color.</description>
+    </item>
+    
+    <item>
+      <title>invertir (obsoleto)</title>
+      <link>https://darktable-org.github.io/dtdocs/es/module-reference/processing-modules/invert/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://darktable-org.github.io/dtdocs/es/module-reference/processing-modules/invert/</guid>
+      <description>Tenga en cuenta que este módulo está obsoleto desde darktable 3.4 y ya no debería usarse para nuevas ediciones. En su lugar, utilice el módulo negatidoctor.
+ Invertir negativos escaneados.
+🔗controles del módulo  color del material de la película Al hacer clic en el campo de color, se abrirá un cuadro de diálogo de selección de color que le ofrece una selección de colores de uso común o le permite definir un color RGB.</description>
+    </item>
+    
+    <item>
+      <title>licuar</title>
+      <link>https://darktable-org.github.io/dtdocs/es/module-reference/processing-modules/liquify/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://darktable-org.github.io/dtdocs/es/module-reference/processing-modules/liquify/</guid>
+      <description>Mueva los píxeles aplicando distorsiones de estilo libre a partes de la imagen utilizando puntos, líneas y curvas.
+🔗nodos Cada una de las herramientas de licuar se basa en nodos. Un punto consta de un solo nodo y una línea o curva consta de una secuencia de nodos vinculados que definen una ruta.
+Cada instancia del módulo licuar está limitada a un máximo de 100 nodos; para más nodos, use instancias adicionales.</description>
+    </item>
+    
+    <item>
+      <title>limpieza de manchas (obsoleto)</title>
+      <link>https://darktable-org.github.io/dtdocs/es/module-reference/processing-modules/spot-removal/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://darktable-org.github.io/dtdocs/es/module-reference/processing-modules/spot-removal/</guid>
+      <description>Tenga en cuenta que este módulo está obsoleto desde darktable 3.6 y ya no debería usarse para nuevas ediciones. En su lugar, utilice la herramienta de &amp;ldquo;clonación&amp;rdquo; del módulo retoque.
+ Corrija áreas de una imagen (el objetivo) utilizando detalles de otra área de la imagen (la fuente).
+Este módulo utiliza algunas de las formas que están disponibles para máscaras dibujadas (círculos, elipses y caminos), y la interfaz de usuario es similar .</description>
+    </item>
+    
+    <item>
+      <title>lut 3D</title>
+      <link>https://darktable-org.github.io/dtdocs/es/module-reference/processing-modules/lut-3d/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://darktable-org.github.io/dtdocs/es/module-reference/processing-modules/lut-3d/</guid>
+      <description>Transforma los valores RGB con un archivo LUT 3D.
+Una LUT 3D es una tabla tridimensional que se utiliza para transformar un valor RGB dado en otro valor RGB. Normalmente se utiliza para simulación de películas y gradación de color.
+Este módulo acepta archivos .cube,.3dl, .png (haldclut) y.gmz. Los datos de 3D LUT sin comprimir no se guardan en la base de datos ni en el archivo XMP, sino que se guardan en la ruta del archivo 3D LUT dentro de la carpeta raíz de 3D LUT.</description>
+    </item>
+    
+    <item>
+      <title>luz de relleno (obsoleto)</title>
+      <link>https://darktable-org.github.io/dtdocs/es/module-reference/processing-modules/fill-light/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://darktable-org.github.io/dtdocs/es/module-reference/processing-modules/fill-light/</guid>
+      <description>Tenga en cuenta que este módulo está obsoleto desde darktable 3.4 y ya no debería usarse para nuevas ediciones. Utilice el módulo ecualizador de tono o el módulo exposición con una máscara dibujada.
+ Modifique localmente la exposición según la luminosidad de los píxeles.
+Este módulo impulsa la exposición aumentando la luminosidad con una curva gaussiana de un ancho específico, centrada en una luminosidad determinada.
+🔗controles del módulo  exposición La exposición a la luz de relleno (EV) centro La luminosidad media afectada por la luz de relleno.</description>
+    </item>
+    
+    <item>
+      <title>mapa de tonos global (obsoleto)</title>
+      <link>https://darktable-org.github.io/dtdocs/es/module-reference/processing-modules/global-tonemap/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://darktable-org.github.io/dtdocs/es/module-reference/processing-modules/global-tonemap/</guid>
+      <description>Tenga en cuenta que este módulo está obsoleto desde darktable 3.4 y ya no debería usarse para nuevas ediciones. En su lugar, utilice el módulo película rgb.
+ Comprima el rango tonal de una imagen HDR en el rango tonal limitado de un archivo de salida LDR típico.
+El mapa de tonos global procesa cada píxel de una imagen HDR, sin tener en cuenta el entorno local. Esto es generalmente más rápido que la versión local del _mapa de tonos (obsoleto) _, pero puede conducir a resultados menos convincentes con escenas de rango dinámico muy alto.</description>
+    </item>
+    
+    <item>
+      <title>mapeo de color</title>
+      <link>https://darktable-org.github.io/dtdocs/es/module-reference/processing-modules/color-mapping/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://darktable-org.github.io/dtdocs/es/module-reference/processing-modules/color-mapping/</guid>
+      <description>Transfiera la apariencia de una imagen a otra.
+Este módulo analiza estadísticamente las características de color de una imagen de origen y de destino. A continuación, los colores de la imagen de origen se asignan a los colores correspondientes de la imagen de destino.
+Se requieren dos pasos para utilizar este módulo:
+  Abra la imagen de origen en la vista de cuarto oscuro y adquiera sus características de color presionando el botón &amp;ldquo;adquirir como fuente&amp;rdquo;.</description>
+    </item>
+    
+    <item>
+      <title>mapeo de tonos (obsoleto)</title>
+      <link>https://darktable-org.github.io/dtdocs/es/module-reference/processing-modules/tone-mapping/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://darktable-org.github.io/dtdocs/es/module-reference/processing-modules/tone-mapping/</guid>
+      <description>Tenga en cuenta que este módulo está obsoleto desde darktable 3.4 y ya no debería usarse para nuevas ediciones. En su lugar, utilice el módulo [ecualizador de tono](./ tone-equalizer.md).
+ Comprima el rango tonal de las imágenes HDR para que se ajusten a los límites de una imagen LDR, utilizando el algoritmo de Durand 2002.
+El algoritmo subyacente utiliza un filtro bilateral para descomponer una imagen en una capa base gruesa y una capa de detalle.</description>
+    </item>
+    
+    <item>
+      <title>marca de agua</title>
+      <link>https://darktable-org.github.io/dtdocs/es/module-reference/processing-modules/watermark/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://darktable-org.github.io/dtdocs/es/module-reference/processing-modules/watermark/</guid>
+      <description>Renderice una superposición basada en vectores en su imagen. Las marcas de agua son documentos SVG estándar y se pueden diseñar utilizando Inkscape.
+Pueden usarse también imágenes de mapa de bits (PNG).
+El procesador SVG en darktable también puede sustituir cadenas dentro de un documento SVG, lo que permite incluir información dependiente de la imagen en la marca de agua.
+Las marcas de agua diseñadas por el usuario deben colocarse en el directorio $HOME/.</description>
+    </item>
+    
+    <item>
+      <title>mezclador de canales (obsoleto)</title>
+      <link>https://darktable-org.github.io/dtdocs/es/module-reference/processing-modules/channel-mixer/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://darktable-org.github.io/dtdocs/es/module-reference/processing-modules/channel-mixer/</guid>
+      <description>Tenga en cuenta que este módulo está obsoleto desde darktable 3.4 y ya no debería usarse para nuevas ediciones. En su lugar, utilice el módulo calibración de color.
+ Una herramienta simple pero poderosa para administrar canales de color.
+Este módulo acepta canales rojo, verde y azul como entrada y proporciona canales rojo, verde, azul, gris, tono, saturación y luminosidad como salida. Le permite controlar de forma independiente cuánto contribuye cada canal de entrada a cada canal de salida.</description>
+    </item>
+    
+    <item>
+      <title>monocromo</title>
+      <link>https://darktable-org.github.io/dtdocs/es/module-reference/processing-modules/monochrome/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://darktable-org.github.io/dtdocs/es/module-reference/processing-modules/monochrome/</guid>
+      <description>Convierta rápidamente una imagen a blanco y negro utilizando un filtro de color variable.
+Para usar este módulo, primero reduzca el tamaño del filtro (para concentrar su efecto) y muévalo a través de la paleta de tonos para encontrar el mejor valor de filtro para la reproducción de imagen deseada. Luego expanda gradualmente el filtro para incluir más matices y lograr una tonalidad más natural.
+Aunque este módulo es fácil de usar, por lo general se pueden obtener mejores resultados usando los ajustes preestablecidos de emulación de película en el módulo calibración de color.</description>
+    </item>
+    
+    <item>
+      <title>negatidoctor</title>
+      <link>https://darktable-org.github.io/dtdocs/es/module-reference/processing-modules/negadoctor/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://darktable-org.github.io/dtdocs/es/module-reference/processing-modules/negadoctor/</guid>
+      <description>Procesar negativos de película escaneados.
+Puede obtener una imagen de un negativo utilizando un escáner de película, o fotografiándolo contra una luz blanca (por ejemplo, una mesa de luz o un monitor de computadora) o un flash fuera de la cámara.
+🔗preparación Si la imagen del negativo se obtuvo con una cámara digital, para obtener colores precisos en la imagen final, deberá tener en cuenta los siguientes puntos:
+  Al tomar la fotografía, ajuste la exposición para utilizar completamente todo el rango dinámico del sensor de su cámara &amp;ndash; es decir, &amp;ldquo;exponer a la derecha&amp;rdquo;, de modo que el histograma de su cámara toque el lado derecho sin recortar (clip) la imagen.</description>
+    </item>
+    
+    <item>
+      <title>niveles</title>
+      <link>https://darktable-org.github.io/dtdocs/es/module-reference/processing-modules/levels/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://darktable-org.github.io/dtdocs/es/module-reference/processing-modules/levels/</guid>
+      <description>Ajuste los puntos negros, blancos y grises medios.
+La herramienta de niveles ofrece dos modos de funcionamiento:
+ manual La herramienta de niveles muestra un histograma de la imagen y muestra tres barras con tiradores. Arrastre las manijas para modificar los puntos negro, gris medio y blanco en valores absolutos de luminosidad de la imagen (el valor L de Lab).  Al mover las barras en blanco y negro para que coincidan con los bordes izquierdo y derecho del histograma, la imagen de salida abarcará todo el rango tonal disponible, lo que aumentará el contraste de la imagen.</description>
+    </item>
+    
+    <item>
+      <title>niveles rgb</title>
+      <link>https://darktable-org.github.io/dtdocs/es/module-reference/processing-modules/rgb-levels/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://darktable-org.github.io/dtdocs/es/module-reference/processing-modules/rgb-levels/</guid>
+      <description>Ajuste los puntos negros, blancos y grises medios en el espacio de color RGB. Este módulo es similar al módulo niveles, que funciona en el espacio de color Lab.
+La herramienta de niveles rgb muestra un histograma de la imagen y muestra tres barras con controles. Arrastre las manijas para modificar los puntos negro, gris medio y blanco en luminosidad (en modo &amp;ldquo;RGB, canales vinculados&amp;rdquo;) o de forma independiente para cada uno de los canales R, G y B (en modo &amp;ldquo;RGB, canales independientes&amp;rdquo;).</description>
+    </item>
+    
+    <item>
+      <title>orientación</title>
+      <link>https://darktable-org.github.io/dtdocs/es/module-reference/processing-modules/orientation/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://darktable-org.github.io/dtdocs/es/module-reference/processing-modules/orientation/</guid>
+      <description>Gire la imagen 90 grados a la vez o voltéela horizontal o verticalmente.
+El módulo está habilitado de forma predeterminada y la orientación (rotación)se establece automáticamente en función de los datos Exif de la imagen.
+La orientación también se puede configurar usando el módulo imágenes seleccionadas en la vista mesa de luz.
+🔗controles del módulo  transformar Haga doble clic en la etiqueta para restablecer a las transformaciones por defecto de la imagen   rotar en sentido anti-horario Gira la imagen 90 grados en sentido antihorario   rotar en sentido horario Gira la imagen 90 grados en sentido horario   voltear horizontalmente voltea la imagen horizontalmente (en espejo)   flip verticalmente voltea la imagen verticalmente (en espejo) mostrar guías marque la casilla para mostrar superposiciones de guía siempre que el módulo esté activado.</description>
+    </item>
+    
+    <item>
+      <title>película rgb</title>
+      <link>https://darktable-org.github.io/dtdocs/es/module-reference/processing-modules/filmic-rgb/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://darktable-org.github.io/dtdocs/es/module-reference/processing-modules/filmic-rgb/</guid>
+      <description>Remapea la gama tonal de una imagen reproduciendo el tono y la respuesta de color de una película clásica.
+Este módulo se puede utilizar para expandir o contraer el rango dinámico de la escena para adaptarse al rango dinámico de la pantalla. Protege los colores y el contraste en los medios tonos, recupera las sombras y comprime las altas luces y las sombras oscuras. Los aspectos más destacados necesitarán un cuidado especial cuando sea necesario preservar los detalles (por ejemplo, nubes).</description>
+    </item>
+    
+    <item>
+      <title>perfil de color de entrada</title>
+      <link>https://darktable-org.github.io/dtdocs/es/module-reference/processing-modules/input-color-profile/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://darktable-org.github.io/dtdocs/es/module-reference/processing-modules/input-color-profile/</guid>
+      <description>Defina cómo darktable interpretará los colores de la imagen.
+Este módulo toma el espacio de color utilizado por la fuente de la imagen (por ejemplo, cámara, escáner) y convierte las codificaciones de píxeles en un espacio de color de trabajo estandarizado. Esto significa que los módulos subsiguientes en la tubería no necesitan preocuparse por los detalles del dispositivo de entrada, y pueden trabajar con y convertir a/desde un espacio de color de trabajo común.</description>
+    </item>
+    
+    <item>
+      <title>perfil de color de salida</title>
+      <link>https://darktable-org.github.io/dtdocs/es/module-reference/processing-modules/output-color-profile/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://darktable-org.github.io/dtdocs/es/module-reference/processing-modules/output-color-profile/</guid>
+      <description>Gestiona el perfil de salida al exportar y la representación de color usada al mapear entre espacios de color.
+darktable viene con perfiles predefinidos sRGB, Adobe RGB, XYZ y RGB lineal. Puede proveer perfiles adicionales al ubicarlos en $DARKTABLE/share/darktable/color/outy$HOME/.config/darktable/color/out(donde $DARKTABLEes el directorio de instalación de darktable y$HOME` es su directorio personal).
+El perfil de color de salida también se puede definir en el módulo de exportar.
+🔗controles del módulo  intención de salida Intento de representación para salida / exportación.</description>
+    </item>
+    
+    <item>
+      <title>pixelar y desenfocar</title>
+      <link>https://darktable-org.github.io/dtdocs/es/module-reference/processing-modules/censorize/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://darktable-org.github.io/dtdocs/es/module-reference/processing-modules/censorize/</guid>
+      <description>Degradar partes de la imagen de una manera estéticamente agradable, para anonimizar personas/objetos u ocultar partes del cuerpo.
+Censorize funciona en el espacio de color RGB lineal para aplicar un desenfoque gaussiano y un ruido de luminancia gaussianos físicamente precisos.
+Además del anonimato, este módulo también se puede utilizar para una amplia gama de propósitos creativos, por ejemplo:
+  Combine un desenfoque simple con un modo de mezcla multiplicar para crear una brillo realista (efecto Orton).</description>
+    </item>
+    
+    <item>
+      <title>punto negro / punto blanco</title>
+      <link>https://darktable-org.github.io/dtdocs/es/module-reference/processing-modules/raw-black-white-point/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://darktable-org.github.io/dtdocs/es/module-reference/processing-modules/raw-black-white-point/</guid>
+      <description>Defina puntos blancos y negros específicos de la cámara.
+Este módulo se activa automáticamente para todas las imágenes sin procesar. La configuración predeterminada se aplica a todas las cámaras compatibles. Normalmente no se requieren cambios en los valores predeterminados.
+🔗controles del módulo  nivel de negro 0-3 El nivel de negro específico de la cámara de los cuatro píxeles en el patrón RGGB Bayer. No se considera que los píxeles con valores inferiores a este nivel contengan datos válidos.</description>
+    </item>
+    
+    <item>
+      <title>píxeles calientes</title>
+      <link>https://darktable-org.github.io/dtdocs/es/module-reference/processing-modules/hot-pixels/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://darktable-org.github.io/dtdocs/es/module-reference/processing-modules/hot-pixels/</guid>
+      <description>Detecta y elimina automáticamente los píxeles calientes.
+Los píxeles calientes son píxeles que no han podido registrar un nivel de luz correctamente. Los píxeles calientes detectados se reemplazan por un promedio de sus vecinos.
+🔗controles del módulo  umbral Cómo de fuerte debe desviarse el valor de un píxel del de sus vecinos para ser considerado un píxel caliente. fuerza La fuerza de fusión de los píxeles calientes con su entorno.</description>
+    </item>
+    
+    <item>
+      <title>reconstrucción de color</title>
+      <link>https://darktable-org.github.io/dtdocs/es/module-reference/processing-modules/color-reconstruction/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://darktable-org.github.io/dtdocs/es/module-reference/processing-modules/color-reconstruction/</guid>
+      <description>Recupere la información de color en las luces altas sobreexpuestas.
+Debido a la naturaleza de los sensores digitales, las luces altas sobreexpuestas carecen de información de color válida. Con mayor frecuencia, aparecen en blanco neutro o exhiben algún matiz de color, dependiendo de qué otros pasos de procesamiento de imágenes estén involucrados. Este módulo se puede utilizar para &amp;ldquo;curar&amp;rdquo; los reflejos sobreexpuestos reemplazando sus colores por otros que se ajusten mejor.</description>
+    </item>
+    
+    <item>
+      <title>reconstrucción de luces altas</title>
+      <link>https://darktable-org.github.io/dtdocs/es/module-reference/processing-modules/highlight-reconstruction/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://darktable-org.github.io/dtdocs/es/module-reference/processing-modules/highlight-reconstruction/</guid>
+      <description>Intente reconstruir la información de color de los píxeles recortados en uno o más canales RGB.
+Si estos píxeles se dejan parcialmente recortados, pueden aparecer colores poco realistas en la imagen. Por ejemplo, los píxeles con los canales verde y azul recortados aparecerán en rojo sin ninguna reconstrucción de resaltado.
+Hay tres métodos de reconstrucción disponibles:
+ recorte de luces altas Fije todos los píxeles al nivel de blanco (es decir, recorte los canales de color restantes).</description>
+    </item>
+    
+    <item>
+      <title>recortar y rotar (obsoleto)</title>
+      <link>https://darktable-org.github.io/dtdocs/es/module-reference/processing-modules/crop-rotate/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://darktable-org.github.io/dtdocs/es/module-reference/processing-modules/crop-rotate/</guid>
+      <description>Tenga en cuenta que este módulo está obsoleto desde darktable 3.8 y ya no debe usarse para nuevas ediciones. Utilice el módulo recortar para recortar la imagen, el módulo rotar y perspectiva para realizar la rotación y la corrección trapezoidal, y el módulo orientación para voltear la imagen en los ejes horizontal/vertical.
+ Recorta, rota y corrige las distorsiones de perspectiva usando guías en pantalla.
+Siempre que la interfaz de usuario de este módulo esté en el foco, se mostrará la imagen completa sin recortar, superpuesta con controles de recorte y líneas de guía opcionales.</description>
+    </item>
+    
+    <item>
+      <title>recorte</title>
+      <link>https://darktable-org.github.io/dtdocs/es/module-reference/processing-modules/crop/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://darktable-org.github.io/dtdocs/es/module-reference/processing-modules/crop/</guid>
+      <description>Recorta una imagen usando las guías en pantalla.
+Este módulo aparece más tarde en la canalización que el módulo obsoleto _recortar y rotar _, lo que significa que la imagen completa puede permanecer disponible para los puntos de origen en el módulo [_retoque _](./ retouch.md). Para obtener los mejores resultados, se recomienda utilizar el módulo rotar y perspectiva para realizar la rotación y la corrección trapezoidal (si es necesario), y luego realizar el recorte creativo final con este módulo.</description>
+    </item>
+    
+    <item>
+      <title>reducción de ruido (perfilado)</title>
+      <link>https://darktable-org.github.io/dtdocs/es/module-reference/processing-modules/denoise-profiled/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://darktable-org.github.io/dtdocs/es/module-reference/processing-modules/denoise-profiled/</guid>
+      <description>Un módulo de eliminación de ruido fácil de usar y altamente eficiente, adaptado a los perfiles de ruido individuales de una amplia gama de sensores de cámara.
+Un problema con muchos algoritmos de eliminación de ruido es que asumen que la varianza del ruido es independiente de la luminosidad de la señal. Al perfilar las características de ruido del sensor de una cámara en diferentes configuraciones ISO, se puede evaluar la variación en diferentes luminosidades y se puede ajustar el algoritmo de eliminación de ruido para suavizar el ruido de manera más uniforme.</description>
+    </item>
+    
+    <item>
+      <title>reducción de ruido para astrofotografía</title>
+      <link>https://darktable-org.github.io/dtdocs/es/module-reference/processing-modules/astrophoto-denoise/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://darktable-org.github.io/dtdocs/es/module-reference/processing-modules/astrophoto-denoise/</guid>
+      <description>Elimina el ruido de la imagen conservando la estructura.
+Esto se logra promediando cada píxel con algunos píxeles circundantes en la imagen. El peso de dicho píxel en el proceso de promediado depende de la similitud de su vecindad con la vecindad del píxel que se elimina el ruido. Se usa un parche con un tamaño definido para medir esa similitud.
+Como la eliminación de ruido es un proceso que consume muchos recursos, ralentiza significativamente el procesamiento de pixelpipe.</description>
+    </item>
+    
+    <item>
+      <title>reducción de ruido raw</title>
+      <link>https://darktable-org.github.io/dtdocs/es/module-reference/processing-modules/raw-denoise/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://darktable-org.github.io/dtdocs/es/module-reference/processing-modules/raw-denoise/</guid>
+      <description>Realice la eliminación de ruido en los datos de imagen sin procesar antes de que sea aplicada la interpolación cromática.
+Este módulo se ha portado desde dcraw.
+🔗controles del módulo  umbral de ruido El umbral para la detección de ruido. Los valores más altos conducen a una mayor eliminación de ruido y una mayor pérdida de detalle de la imagen. curvas grueso/fino El ruido de una imagen suele ser una combinación de ruido de grano fino y de grano grueso.</description>
+    </item>
+    
+    <item>
+      <title>resplandor</title>
+      <link>https://darktable-org.github.io/dtdocs/es/module-reference/processing-modules/bloom/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://darktable-org.github.io/dtdocs/es/module-reference/processing-modules/bloom/</guid>
+      <description>Crea un efecto de floración suave.
+Este módulo funciona difuminando las luces altas y luego mezclando el resultado con la imagen original.
+ Nota: Este módulo realiza desenfoques en el espacio de color Lab y ya no se recomienda. En su lugar, utilice el módulo ecualizador de tono o el módulo exposición con una [máscara paramétrica](../../darkroom/masking-and- blending/masks/parametric.md).
+ 🔗controles del módulo  size The spatial extent of the bloom effect. umbral El umbral para el aumento de brillo.</description>
+    </item>
+    
+    <item>
+      <title>retoque</title>
+      <link>https://darktable-org.github.io/dtdocs/es/module-reference/processing-modules/retouch/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://darktable-org.github.io/dtdocs/es/module-reference/processing-modules/retouch/</guid>
+      <description>Elimine los elementos no deseados de su imagen clonando, saneando, difuminando y rellenando con formas dibujadas.
+Este módulo amplía las capacidades del módulo obsoleto remover manchas (equivalente a la herramienta &amp;ldquo;clonar&amp;rdquo; de este módulo) al incluir una herramienta &amp;ldquo;curar&amp;rdquo; (basada en la herramienta curar de GIMP), como así como los modos de &amp;ldquo;relleno&amp;rdquo; y &amp;ldquo;desenfoque&amp;rdquo;. También puede aprovechar la descomposición de wavelets, lo que permite que la imagen se separe en capas de diferentes detalles (de grueso a fino) que se pueden retocar selectivamente antes de ser recombinado para producir la imagen de salida.</description>
+    </item>
+    
+    <item>
+      <title>rotación y perspectiva</title>
+      <link>https://darktable-org.github.io/dtdocs/es/module-reference/processing-modules/rotate-perspective/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://darktable-org.github.io/dtdocs/es/module-reference/processing-modules/rotate-perspective/</guid>
+      <description>Corrige automáticamente las líneas convergentes, una forma de distorsión de la perspectiva. El mecanismo subyacente está inspirado en el programa ShiftN de Markus Hebel. Este módulo también permite ajustar la rotación de la imagen.
+Las distorsiones de perspectiva son un efecto natural cuando se proyecta una escena tridimensional en un plano bidimensional y hacen que los objetos cercanos al espectador parezcan más grandes que los objetos más lejanos. Las líneas convergentes son un caso especial de distorsiones de perspectiva que se ven con frecuencia en fotografías de arquitectura.</description>
+    </item>
+    
+    <item>
+      <title>rotar píxeles</title>
+      <link>https://darktable-org.github.io/dtdocs/es/module-reference/processing-modules/rotate-pixels/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://darktable-org.github.io/dtdocs/es/module-reference/processing-modules/rotate-pixels/</guid>
+      <description>Los sensores de algunas cámaras (como Fujifilm FinePix S2Pro, F700 y E550) tienen un patrón Bayer orientado diagonalmente en lugar del diseño ortogonal habitual.
+Sin la corrección, esto daría lugar a una imagen inclinada con esquinas negras. Este módulo aplica la rotación requerida.
+darktable detecta imágenes que necesitan corrección utilizando sus datos Exif y activa automáticamente este módulo cuando sea necesario. Para otras imágenes, el módulo siempre permanece desactivado.
+El módulo no tiene controles.</description>
+    </item>
+    
+    <item>
+      <title>sistema de zona (obsoleto)</title>
+      <link>https://darktable-org.github.io/dtdocs/es/module-reference/processing-modules/zone-system/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://darktable-org.github.io/dtdocs/es/module-reference/processing-modules/zone-system/</guid>
+      <description>Tenga en cuenta que este módulo está obsoleto desde darktable 3.4 y ya no debería usarse para nuevas ediciones. Utilice el ecualizador de tono o varias instancias del módulo exposición con máscaras paramétricas para limitar a una zona.
+ Ajuste la luminosidad de una imagen con el sistema de zonas de Ansel Adams .
+La claridad de la imagen (el canal L en el espacio de color Lab) se divide en varias zonas que van desde el negro puro al blanco puro.</description>
+    </item>
+    
+    <item>
+      <title>sombras y luces</title>
+      <link>https://darktable-org.github.io/dtdocs/es/module-reference/processing-modules/shadows-and-highlights/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://darktable-org.github.io/dtdocs/es/module-reference/processing-modules/shadows-and-highlights/</guid>
+      <description>Modifique el rango tonal de las sombras y las luces de una imagen mejorando el contraste local.
+ Note: This module performs blurs in Lab color space, which can result in a number of issues when the parameters are pushed hard, including halos, high local contrast in highlights, and hue shifts towards blue in the shadows. You are advised to use the tone equalizer module instead.
+ 🔗controles del módulo  sombras Controla el efecto sobre las sombras.</description>
+    </item>
+    
+    <item>
+      <title>Suavizar</title>
+      <link>https://darktable-org.github.io/dtdocs/es/module-reference/processing-modules/soften/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://darktable-org.github.io/dtdocs/es/module-reference/processing-modules/soften/</guid>
+      <description>Cree una imagen suavizada con el efecto Orton.
+Michael Orton logró sus resultados en la película de diapositivas utilizando dos exposiciones de la misma escena, una bien expuesta y otra sobreexpuesta. Luego utilizó una técnica de cuarto oscuro para combinar estas dos imágenes en una imagen final donde la imagen sobreexpuesta estaba borrosa.
+Este módulo es una copia cercana del proceso analógico de Orton al dominio digital.
+🔗controles del módulo  Tamaño El tamaño del desenfoque de la imagen sobreexpuesta.</description>
+    </item>
+    
+    <item>
+      <title>Tabla de búsqueda de color</title>
+      <link>https://darktable-org.github.io/dtdocs/es/module-reference/processing-modules/color-look-up-table/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://darktable-org.github.io/dtdocs/es/module-reference/processing-modules/color-look-up-table/</guid>
+      <description>Una tabla de búsqueda de color genérica implementada en el espacio Lab.
+La entrada a este módulo es una lista de puntos de origen y destino y el mapeo completo se interpola usando curvas-S. Las tablas de búsqueda (LUT) resultantes se pueden editar a mano y se pueden crear utilizando la utilidad darktable-chart para que coincida con la entrada dada (como hald-cluts y RAW/JPEG con pares de procesamiento en la cámara).</description>
+    </item>
+    
+    <item>
+      <title>tono dividido</title>
+      <link>https://darktable-org.github.io/dtdocs/es/module-reference/processing-modules/split-toning/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://darktable-org.github.io/dtdocs/es/module-reference/processing-modules/split-toning/</guid>
+      <description>Cree un efecto de tono lineal de dos colores en el que las sombras y las luces se representen con dos colores diferentes.
+El módulo de tono dividido no convierte imágenes a blanco y negro y tiene beneficios limitados en imágenes en color. Por lo tanto, para realizar la tonificación dividida tradicional, la entrada a este módulo debe ser monocromática.
+🔗controles del módulo  sombras y reflejos de color Establece el tono y la saturación deseados para las sombras y las luces.</description>
+    </item>
+    
+    <item>
+      <title>tramado</title>
+      <link>https://darktable-org.github.io/dtdocs/es/module-reference/processing-modules/dithering/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://darktable-org.github.io/dtdocs/es/module-reference/processing-modules/dithering/</guid>
+      <description>Este módulo elimina algunos de los artefactos de bandas que pueden resultar cuando los datos internos de coma flotante de 32 bits de darktable se transfieren a un formato de salida entero discreto de 8 o 16 bits para su visualización o exportación.
+Aunque no es un problema inherente a ninguno de los módulos de darktable, algunas operaciones pueden provocar bandas si producen un gradiente de luminosidad en la imagen. Para mitigar los posibles artefactos, debe considerar activar el dithering cuando utilice los módulos _viñeteo _ o filtro de densidad graduada.</description>
+    </item>
+    
+    <item>
+      <title>Velvia</title>
+      <link>https://darktable-org.github.io/dtdocs/es/module-reference/processing-modules/velvia/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://darktable-org.github.io/dtdocs/es/module-reference/processing-modules/velvia/</guid>
+      <description>Resatura los píxeles de una manera ponderada que da más peso a los negros, los blancos y los píxeles menos saturados.
+ Nota: Este módulo provoca cambios de tono y brillo que pueden ser difíciles de manejar. En su lugar, utilice el módulo color balance rgb para modificaciones de color.
+ 🔗controles del módulo  fuerza La fuerza del efecto sesgo de tonos medios Reduce el efecto en los medios tonos para evitar tonos de piel poco naturales.</description>
+    </item>
+    
+    <item>
+      <title>visión nocturna</title>
+      <link>https://darktable-org.github.io/dtdocs/es/module-reference/processing-modules/lowlight-vision/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://darktable-org.github.io/dtdocs/es/module-reference/processing-modules/lowlight-vision/</guid>
+      <description>Simule la visión humana con poca luz. Este módulo también se puede utilizar para realizar una conversión de día a noche.
+La idea es calcular una imagen de visión escotópica, que es percibida por los bastones en lugar de los conos en los ojos con poca luz. Luego, la luminosidad escotópica se mezcla con el valor fotópico (píxel de imagen de color normal) utilizando alguna función de combinación. Este módulo también puede simular el efecto Purkinje agregando algo de azul a las partes oscuras de la imagen.</description>
+    </item>
+    
+    <item>
+      <title>viñeteado</title>
+      <link>https://darktable-org.github.io/dtdocs/es/module-reference/processing-modules/vignetting/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://darktable-org.github.io/dtdocs/es/module-reference/processing-modules/vignetting/</guid>
+      <description>Aplica un efecto de viñeteado a la imagen.
+El viñeteado es una modificación del brillo y la saturación en los bordes de la imagen en una forma específica. Muchos de los parámetros que se enumeran a continuación también se pueden modificar con un control gráfico que superpone la imagen cuando el módulo tiene el foco, mostrando la forma y extensión del efecto.
+ Nota: Se sabe que este módulo provoca artefactos de bandas en determinadas condiciones.</description>
+    </item>
+    
+    <item>
+      <title>zonas de color</title>
+      <link>https://darktable-org.github.io/dtdocs/es/module-reference/processing-modules/color-zones/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://darktable-org.github.io/dtdocs/es/module-reference/processing-modules/color-zones/</guid>
+      <description>Ajuste selectivamente la luminosidad, la saturación y el tono de los píxeles en función de su luminosidad, saturación y tono actuales.
+Este módulo funciona en el espacio de color CIE LCh, que separa los píxeles en componentes luminosidad, chroma (saturación) y hue (tono). Le permite manipular la luminosidad, la saturación y el tono de grupos de píxeles específicos mediante el uso de curvas.
+Primero debe elegir si desea ajustar (seleccionar) píxeles en función de su luminosidad, saturación o tono.</description>
+    </item>
+    
+  </channel>
+</rss>

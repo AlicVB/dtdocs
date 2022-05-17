@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>archivos sidecar y edición no destructiva on darktable 3.9 user manual</title>
+    <link>https://darktable-org.github.io/dtdocs/es/overview/sidecar-files/</link>
+    <description>Recent content in archivos sidecar y edición no destructiva on darktable 3.9 user manual</description>
+    <generator>Hugo -- gohugo.io</generator><atom:link href="https://darktable-org.github.io/dtdocs/es/overview/sidecar-files/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>archivos sidecar</title>
+      <link>https://darktable-org.github.io/dtdocs/es/overview/sidecar-files/sidecar/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://darktable-org.github.io/dtdocs/es/overview/sidecar-files/sidecar/</guid>
+      <description>darktable es un editor de imágenes no destructivo y abre todas las imágenes en modo de solo lectura. Cualquier dato creado dentro de darktable (metadatos, etiquetas y pasos de procesamiento de imágenes) se almacena en archivos &amp;ldquo;.XMP&amp;rdquo; sidecar separados. Estos archivos se almacenan junto a los achivos RAW originales y permiten a darktable almacenar información sobre las imágenes, así como el historial de edición completo sin tocar los archivos originales sin procesar.</description>
+    </item>
+    
+    <item>
+      <title>importar archivos de sidecar generados por otras aplicaciones</title>
+      <link>https://darktable-org.github.io/dtdocs/es/overview/sidecar-files/sidecar-import/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://darktable-org.github.io/dtdocs/es/overview/sidecar-files/sidecar-import/</guid>
+      <description>Al importar una imagen, darktable comprueba automáticamente si está acompañada de un archivo sidecar. Además de buscar archivos llamados &amp;lt;nombre base&amp;gt;. &amp;lt;Extensión&amp;gt;.xmp y&amp;lt;nombre base&amp;gt;_nn. &amp;lt;Extensión&amp;gt;.xmp (formatos de nombres de archivos XMP de darktable), darktable también verifica la presencia de un archivo en el formulario &amp;lt;nombre base&amp;gt;.xmp (el formato de nomenclatura para los archivos sidecar XMP de Lighroom). Los archivos con el último formato de nomenclatura serán leídos por darktable pero no se escribirán en ellos.</description>
+    </item>
+    
+    <item>
+      <title>copias locales</title>
+      <link>https://darktable-org.github.io/dtdocs/es/overview/sidecar-files/local-copies/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://darktable-org.github.io/dtdocs/es/overview/sidecar-files/local-copies/</guid>
+      <description>Muchos usuarios tienen enormes colecciones de imágenes almacenadas en discos duros adicionales en su computadora de escritorio o en un medio de almacenamiento externo (RAID NAS, discos duros externos, etc.).
+Es un requisito común desarrollar una serie de imágenes durante un viaje utilizando una computadora portátil y luego sincronizarlas con el medio de almacenamiento original. Sin embargo, copiar imágenes manualmente desde el almacenamiento principal a la computadora portátil y viceversa es engorroso y propenso a errores.</description>
+    </item>
+    
+  </channel>
+</rss>

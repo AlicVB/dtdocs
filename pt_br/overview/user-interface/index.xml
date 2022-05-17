@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>interface do usuário on manual do usuário darktable 3.9</title>
+    <link>https://darktable-org.github.io/dtdocs/pt_br/overview/user-interface/</link>
+    <description>Recent content in interface do usuário on manual do usuário darktable 3.9</description>
+    <generator>Hugo -- gohugo.io</generator><atom:link href="https://darktable-org.github.io/dtdocs/pt_br/overview/user-interface/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>rolo de filme</title>
+      <link>https://darktable-org.github.io/dtdocs/pt_br/overview/user-interface/filmstrip/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://darktable-org.github.io/dtdocs/pt_br/overview/user-interface/filmstrip/</guid>
+      <description>O rolo de filme, quando está habilitado, é exibido na parte inferior da tela (exceto na vista da mesa de luz, onde é substituído pelo módulo da linha do tempo) e exibe as imagens da coleção atual (configuradas na vista da mesa de luz). Você pode navegar pelo rolo de filme usando a roda do mouse.
+O rolo de filme lhe permite interagir com as imagens enquanto você não está na vista da mesa de luz.</description>
+    </item>
+    
+    <item>
+      <title>painel superior</title>
+      <link>https://darktable-org.github.io/dtdocs/pt_br/overview/user-interface/top-panel/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://darktable-org.github.io/dtdocs/pt_br/overview/user-interface/top-panel/</guid>
+      <description>O painel superior é comum a todas as vistas do darktable e fornece acesso a um conjunto de funções comuns.
+  🔗do lado esquerdo  visualizar Seleciona quais imagens visualizar na mesa de luz/rolo de filme baseado na classificação de estrela e estado de rejeitado. ordenar por Seleciona uma propriedade pela qual as imagens serão ordenadas.   ícone de ordenação Alterna a ordem de exibição (ascendente/descendente).  🔗do lado direito    agrupamento Expandir ou recolher imagens agrupadas.</description>
+    </item>
+    
+    <item>
+      <title>atalhos de teclado</title>
+      <link>https://darktable-org.github.io/dtdocs/pt_br/overview/user-interface/keyboard-shortcuts/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://darktable-org.github.io/dtdocs/pt_br/overview/user-interface/keyboard-shortcuts/</guid>
+      <description>Grande parte das funcionalidades do darktable pode ser controlada por meio de atalhos de teclado, que podem ser personalizados em preferências &amp;gt; atalhos.
+Pressione a tecla H (para obter ajuda) em qualquer vista do darktable para exibir uma lista de todos os atalhos que são aplicados à vista atual.</description>
+    </item>
+    
+  </channel>
+</rss>

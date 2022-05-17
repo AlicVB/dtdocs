@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Benutzeroberfläche on darktable 3.9 user manual</title>
+    <link>https://darktable-org.github.io/dtdocs/de/overview/user-interface/</link>
+    <description>Recent content in Benutzeroberfläche on darktable 3.9 user manual</description>
+    <generator>Hugo -- gohugo.io</generator><atom:link href="https://darktable-org.github.io/dtdocs/de/overview/user-interface/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Filmstreifen</title>
+      <link>https://darktable-org.github.io/dtdocs/de/overview/user-interface/filmstrip/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://darktable-org.github.io/dtdocs/de/overview/user-interface/filmstrip/</guid>
+      <description>Der Filmstreifen wird, wenn er angewählt ist unten auf dem Bildschirm angezeigt, (außer in der Ansicht Leuchttisch, in der er durch das Modul Zeitleiste) ersetzt wird und er zeigt die Bilder der gegenwärtigen Sammlung, (die in der Ansicht Leuchttisch ausgewählt ist.) Du kannst mit dem Mausrad im Filmstreifen navigieren.
+Der Filmstreifen erlaubt eine Interaktion mit Bildern außerhalb der Ansicht Leuchttisch. Zum Beispiel kann während der Entwicklung eines Bildes in der Dunkelkammer durch Anklicken eines Vorschaubilds im Filmstreifen zum zugehörigen Bild gewechselt werden.</description>
+    </item>
+    
+    <item>
+      <title>Kopfzeile</title>
+      <link>https://darktable-org.github.io/dtdocs/de/overview/user-interface/top-panel/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://darktable-org.github.io/dtdocs/de/overview/user-interface/top-panel/</guid>
+      <description>Die obere Leiste ist für alle Ansichten von darktable gemeinsam und sieht die folgenden Funktionen vor.
+  🔗Linke Seite  Ansicht Wähle hier welche Bilder im Filmstreifen/Zeitleiste angezeigt werden sollen, basierend auf der Sternebewertung und abgelehnt Status. Sortiere mit Wähle hier eine Möglichkeit, mit welcher die Bilder sortiert werden.   sortiere die Reihenfolge Schalte die Reihenfolge (aufsteigend/absteigend).  🔗Rechte Seite    gruppieren Aus- oder Einklappen gruppierter Bilder.</description>
+    </item>
+    
+    <item>
+      <title>Kurzbefehle</title>
+      <link>https://darktable-org.github.io/dtdocs/de/overview/user-interface/keyboard-shortcuts/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://darktable-org.github.io/dtdocs/de/overview/user-interface/keyboard-shortcuts/</guid>
+      <description>Ein Großteil der Funktionen von darktable kann mit Kurzbefehlen gesteuert werden, die unter darktable-Voreinstellungen &amp;gt; Kurzbefehle anpassbar sind.
+In jeder Ansicht von darktable zeigt die Taste H (für Hilfe) eine Liste mit den dort verfügbaren Kurzbefehlen an.</description>
+    </item>
+    
+  </channel>
+</rss>

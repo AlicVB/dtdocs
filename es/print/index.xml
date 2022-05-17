@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Imprimir on darktable 3.9 user manual</title>
+    <link>https://darktable-org.github.io/dtdocs/es/print/</link>
+    <description>Recent content in Imprimir on darktable 3.9 user manual</description>
+    <generator>Hugo -- gohugo.io</generator><atom:link href="https://darktable-org.github.io/dtdocs/es/print/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Resumen</title>
+      <link>https://darktable-org.github.io/dtdocs/es/print/overview/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://darktable-org.github.io/dtdocs/es/print/overview/</guid>
+      <description>Esta vista permite imprimir sus imágenes. Porque imprimir no es fácil, hay varios aspectos técnicos a tener en cuenta.
+Después de seleccionar una imagen en la [vista de mesa de luz] (../ mesa de luz / _index.md), se puede ingresar en el módulo [configuración de impresión] (../ module-reference / utility-modules / print / print-settings.md) para ajuste la configuración de la impresora e inicie la impresión.
+Este módulo admite el perfil ICC de la impresora, que es algo obligatorio si desea obtener una impresión de alta calidad cercana a la imagen que se muestra en la pantalla.</description>
+    </item>
+    
+    <item>
+      <title>vista de imprimir</title>
+      <link>https://darktable-org.github.io/dtdocs/es/print/print-view-layout/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://darktable-org.github.io/dtdocs/es/print/print-view-layout/</guid>
+      <description>El área central muestra el diseño de la imagen en el papel (el área blanca). Es posible que aparezcan algunos bordes grises alrededor de la imagen para representar el área imprimible (la página menos los bordes) no rellenada por la imagen.
+La [tira de imágenes] (../module-reference /utility-modules/shared/filmstrip.md) debajo de la imagen le permite seleccionar más imágenes.
+🔗panel izquierdo  [colecciones] (../ module-reference / utility-modules / shared / collections.md) Filtra la lista de imágenes que se muestran en la mesa de luz.</description>
+    </item>
+    
+  </channel>
+</rss>

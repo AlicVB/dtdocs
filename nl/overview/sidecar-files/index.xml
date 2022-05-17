@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>nevenbestanden en niet-destructieve bewerking on darktable 3.9 user manual</title>
+    <link>https://darktable-org.github.io/dtdocs/nl/overview/sidecar-files/</link>
+    <description>Recent content in nevenbestanden en niet-destructieve bewerking on darktable 3.9 user manual</description>
+    <generator>Hugo -- gohugo.io</generator><atom:link href="https://darktable-org.github.io/dtdocs/nl/overview/sidecar-files/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>nevenbestanden</title>
+      <link>https://darktable-org.github.io/dtdocs/nl/overview/sidecar-files/sidecar/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://darktable-org.github.io/dtdocs/nl/overview/sidecar-files/sidecar/</guid>
+      <description>darktable is een niet-destructieve afbeeldingseditor en opent alle afbeeldingen in alleen-lezen modus. Alle gegevens die in darktable zijn gemaakt (metagegevens, labels en beeldverwerkingsstappen) worden opgeslagen in afzonderlijke .XMP nevenbestanden. Deze bestanden worden naast de originele Raw-bestanden opgeslagen en zorgen ervoor dat darktable informatie over de afbeeldingen en de volledige bewerkingsgeschiedenis kan opslaan zonder de originele Raw-bestanden aan te raken. Wanneer je voor de eerste keer een afbeelding in darktable importeert, wordt automatisch een XMP-bestand gegenereerd.</description>
+    </item>
+    
+    <item>
+      <title>nevenbestanden importeren die door andere toepassingen zijn gegenereerd</title>
+      <link>https://darktable-org.github.io/dtdocs/nl/overview/sidecar-files/sidecar-import/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://darktable-org.github.io/dtdocs/nl/overview/sidecar-files/sidecar-import/</guid>
+      <description>Bij het importeren van een afbeelding controleert darktable automatisch of deze vergezeld gaat van een nevenbestand. Naast het zoeken naar bestanden met de naam &amp;lt;basename&amp;gt;.&amp;lt;extension&amp;gt;.xmp en &amp;lt;basename&amp;gt;_nn.&amp;lt;extension&amp;gt;.xmp (de XMP bestandsnaamgevingsformaten van darktable) controleert darktable ook op de aanwezigheid van een bestand in het formulier &amp;lt;basename&amp;gt;.xmp (het naamgevingsformaat voor Lightroom&amp;rsquo;s XMP nevenbestanden). Bestanden met de laatstgenoemde naamgeving worden gelezen door darktable, maar er wordt niet naar geschreven. Nadat de afbeelding is geïmporteerd, genereert darktable een extra XMP-bestand met zijn eigen naamgevingsconventie.</description>
+    </item>
+    
+    <item>
+      <title>lokale copies</title>
+      <link>https://darktable-org.github.io/dtdocs/nl/overview/sidecar-files/local-copies/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://darktable-org.github.io/dtdocs/nl/overview/sidecar-files/local-copies/</guid>
+      <description>Veel gebruikers hebben enorme beeldcollecties opgeslagen op extra harde schijven in hun desktopcomputer, of op een extern opslagmedium (RAID NAS, externe harde schijven etc.).
+Het is een algemene vereiste om tijdens het reizen een aantal afbeeldingen met een laptop te ontwikkelen en deze later weer te synchroniseren met het oorspronkelijke opslagmedium. Het handmatig kopiëren van afbeeldingen van het hoofdgeheugen naar de laptop en terug is echter omslachtig en foutgevoelig. De functie &amp;ldquo;lokale kopieën&amp;rdquo; van darktable is ontworpen om deze gebruikssituaties rechtstreeks te ondersteunen.</description>
+    </item>
+    
+  </channel>
+</rss>
